@@ -99,7 +99,7 @@
         <label for="email">Email</label> <br>
         <input size="30" maxlength="35" name="email" type="email" placeholder="youremail@website.com" autocomplete="on" required> <br>
         <label for="address">Address</label> <br>
-        <input size="30" maxlength="45" name="address" type="text" placeholder="221 Address Rd." autocomplete="on"> <br>
+        <input size="30" maxlength="45" name="address" type="text" placeholder="221 Address Rd." autocomplete="on" required> <br>
         <label for="city">City</label> <br>
         <input list="cities" id="city" size="20" maxlength="35" name="city" type="text" placeholder="Toronto" required> <br>
         <datalist id="cities">
@@ -112,10 +112,10 @@
         </datalist>
 
         <label for="postalcode">Postal Code</label> <br>
-        <input size="5" maxlength="7" name="postalcode" type="postal" placeholder="A1A 1A1" autocomplete="on"> <br>
+        <input size="5" maxlength="7" name="postalcode" type="postal" placeholder="A1A 1A1" autocomplete="on" required> <br>
         <textarea id="textbox" name="textbox" rows="3" cols="50" placeholder="Questions or comments?" required></textarea> <br>
         
-        <input name="topic" id="question" type="radio">
+        <input name="topic" id="question" type="radio" required>
         <label for="question">Question?</label><br>
         <input name="topic" id="comment" type="radio">
         <label for="comment">Comment?</label><br>
