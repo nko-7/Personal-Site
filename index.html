@@ -9,23 +9,52 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+
 <!-- css links go here -->
 </head>
 
 <body>
-    <header class="page-heading">
-        <h1>Nathaniel Ko</h1>
-    </header>
 <div class="portrait">
     <img src="photo_of_me.png" alt="Photo of Nathaniel Ko" class="photo">
+    <h1>Nathaniel Ko</h1>
+    <h2>Data Analyst, Data Scientist</h2>
+    <a href="#form">Contact Me</a>
+    <a href="July 8, 2021 - Nathaniel Ko - Resume.pdf">Resume</a>
 </div>
-<!-- top section - image of myself along w/ a title I hope to get in the future
-                 - Two buttons: - Contact Me: point to the contact me form
-                                - Resume: download button for my resume -->
-<!-- division (stylish line or different background color - see discord.com) -->
-
+<!-- top section - image of myself along w/ a title I hope to get in the future-->
+                 
 <!-- infographic section - tells information about me -->
+<div class="info">
+    <div id="aboutme">
+    <h1 class="infohead" >About Me</h1>
+    <p>My journey to become a programmer has been a long road. Years ago when I first started
+       my degree at the University of Waterloo I barely knew coding was a thing. I was enamoured
+       with studying science I didn't really look elsewhere. Little did I know coding was a huge
+       part of Physics and everything else. I took some computer science classes at Waterloo, but
+       despite realizing a love of computers and coding decided to keep with my degree.
+    </p>
+    <p> I ended up getting a job at a software company in a project management role of all things. There I 
+       realized that programming was a lucrative proffession and something I could see myself doing.
+       I decided to try and take a path towards the goal of becoming a programmer, but unfortunately
+       was let go from that company. 
+    </p>
+    <p>I questioned my future and if I should try and take advantage
+       of my degree or switch streams and commit to being a programmer. I ended up enrolling at
+       Seneca so I could have a more structured learning environment and learn as much as possible.
+       Hopefully in the future I can land a role doing data analysis or data science so I can still
+       take advantage of the skills I learned with my degree and all the programming experience I will
+       gain at Seneca.
+    </p>
+    </div>
 
+    <div id="basicinfo">
+    <h1 class="infohead" >Basic Information</h1>
+    <h2>Age:</h2> <span>26</span> <br>
+    <h2>Email:</h2> <span>nko4@myseneca.ca</span> <br>
+    <h2>Language:</h2> <span>English</span>
+    </div>
+    
+</div>
 <!-- division -->
 
 <div class="education">
@@ -42,9 +71,11 @@
        Minor in Earth Science
     </p>
     </div>
+</div>
+<div class="education">
     <div id="seneca" class="certification">
         <br>
-        <h3>2021 - 2024 (expected)</h3>
+        <h3>2021 - 2023 (expected)</h3>
         <h2>Diploma</h2>
     </div>
     
@@ -57,47 +88,60 @@
     
 </div>
     
-
-<!-- education section - use an interesting style to convey my educational info -->
-
 <!-- division -->
-<div class="form">
+<div id="form" class="form">
     <h2>Contact Me</h2>
         
     
     <form action="https://httpbin.org/post" method="POST" id="contactme">
         <label for="name">Name</label> <br>
-        <input name="name" type="text" placeholder="John Doe"> <br>
+        <input size="30" maxlength="45" name="name" type="text" placeholder="John Doe" autocomplete="on" required> <br>
         <label for="email">Email</label> <br>
-        <input name="email" type="email" placeholder="youremail@website.com"> <br>
+        <input size="30" maxlength="35" name="email" type="email" placeholder="youremail@website.com" autocomplete="on" required> <br>
         <label for="address">Address</label> <br>
-        <input name="address" type="text" placeholder="221 Address Rd."> <br>
+        <input size="30" maxlength="45" name="address" type="text" placeholder="221 Address Rd." autocomplete="on"> <br>
+        <label for="city">City</label> <br>
+        <input list="cities" id="city" size="20" maxlength="35" name="city" type="text" placeholder="Toronto" required> <br>
+        <datalist id="cities">
+            <option value="Montreal">
+            <option value="Halifax">
+            <option value="Kingston">
+            <option value="Vancouver">
+            <option value="London">
+            <option value="Waterloo">
+        </datalist>
+
         <label for="postalcode">Postal Code</label> <br>
-        <input name="postalcode" type="text" placeholder="A1A 1A1"> <br>
+        <input size="5" maxlength="7" name="postalcode" type="postal" placeholder="A1A 1A1" autocomplete="on"> <br>
+        <textarea id="textbox" name="textbox" rows="3" cols="50" placeholder="Questions or comments?" required></textarea> <br>
         
         <input name="topic" id="question" type="radio">
         <label for="question">Question?</label><br>
         <input name="topic" id="comment" type="radio">
         <label for="comment">Comment?</label><br>
-        <input name="topic" id="hiring" type="radio">
-        <label for="Hiring?">Hiring?</label><br>
+        <input name="topic" id="hiring" type="radio" onclick="javascript:salaryInput();">
+        <label for="hiring">Hiring?</label><br>
+        <input type="number" id="salary" style="visibility: hidden;" placeholder="$50000">
+        <label for="salary" id="salarylabel" style="visibility: hidden;">Salary</label> <br>
+        <script>
+            function salaryInput() {
+                if (document.getElementById('hiring').checked) {
+                    document.getElementById('salary').style.visibility='visible';
+                    document.getElementById('salarylabel').style.visibility='visible';
+                } 
+                else {
+                    document.getElementById('salary').style.visibility='hidden';
+                    document.getElementById('salarylabel').style.visibility='hidden'
+                }
+                }
+            
+        </script>
+        <br>
         <input type="submit" value="Submit">
         
     </form>
 </div>
-<!-- HTML form - where the user can fill out their information along with a message (a contact me form). Should include the following :
-- Name
-- Email Address
-- Address
-- City (use a <datalist> for autocomplete of common Canadian cities)
-- Postal Code (must be a valid Canadian Postal Code, with or without a space, use a regex pattern)
-- Radio Options to specify what this is about: one of "Question", 
-  "Comment", or "Hiring". If the user selects "Hiring", dynamically 
-  reveal (with JavaScript) another input box to enter the hourly rate 
-  (with proper validation). In the case of "Comment" or "Question" 
-  hide this input box.
-- A large area to enter the message that they want to send
- -->
+<!-- HTML form - where the user can fill out their information along with a message (a contact me form)-->
 <footer>
 
 </footer>

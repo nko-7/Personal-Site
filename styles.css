@@ -20,19 +20,55 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+a {
+    font-family: 'Source Sans Pro', sans-serif;
+ 
+}
+
 img {
     align-self: center;
 }
 
+
+
 .portrait {
-    background-color: rgb(146, 174, 212);
+    border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
     width: 90%;
     max-width: 1100px;
-    height: 300px;
+    text-align: center;
+    background: linear-gradient(90deg, white 0%, rgb(207, 171, 73) 100%);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
 }
+
+.portrait h1 {
+    font-family: fantasy;
+    color: #f6f6f6;
+}
+
+.portrait h2 {
+    color: ghostwhite;
+}
+
+.portrait a {
+background-color: rgb(166, 223, 223);
+color: ghostwhite;
+text-align: center;
+border-radius: 10px;
+padding: 5px;
+margin-right: 25px;
+margin-left: 25px;
+}
+
+/*
+    colors 
+    rgb(166, 223, 223) -nice blue
+    rgb(146, 174, 212) -nice purple
+*/
 
 .photo {
     display: block;
@@ -45,49 +81,69 @@ img {
     object-fit: cover;
 }
 
-.page-heading {
+.info {
+    
     border-radius: 10px;
-    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    flex-direction: row;
     width: 90%;
     max-width: 1100px;
-    text-align: center;
-    background: linear-gradient(90deg, white 0%, rgb(166, 223, 223) 100%);
+    background-color: rgb(146, 174, 212);    
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-.page-heading h1 {
+#aboutme {
     padding-left: 30px;
-    text-align: left;
-    width: 90%;
-    max-width: 1100px;
-    font-size: 35px;
-    margin-top: 0;
-    margin-bottom: 0;
+    width:60%;
+}
+
+#basicinfo {
+    padding-right: 30px;
+}
+
+
+.info h1 {
+    text-decoration: underline;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: white;
+    padding-right: 20px;
+}
+
+.info h2 {
+    text-decoration: underline;
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 5%;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .education {
     border-radius: 10px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: stretch;
-    
     width: 90%;
     max-width: 1100px;
-    background-color: #cfcfcf;    
+    background-color: #dbd8d8;    
     margin-left: auto;
     margin-right: auto;
-
+    margin-bottom: 10px;
 }
 
 .certification {
     border-radius: 10px;
     text-align: center;
     vertical-align: middle;
-    background-color: rgb(81, 168, 81);
+    background-color: rgb(207, 171, 73);
     padding-bottom: 20px;
     padding-top: 20px;
     float: left;
@@ -95,9 +151,7 @@ img {
     height: 120px;
 }
 
-#seneca {
-    order: 3;
-}
+
 
 .edinfo {
     padding-left: 20px;
@@ -134,6 +188,9 @@ img {
 .form h2 {
     color: #a19f9f;
     padding-left: 30px;
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
 }
 
 .form label {
@@ -146,17 +203,24 @@ img {
     margin-left: 30px;
 }
 
-.form h2 {
-    padding-top: 10px;
-    margin-top: 0px;
-    margin-bottom: 5px;
+input[type=radio] {
+    margin-bottom: 15px;
+}
+
+#ishiring {
+    margin-bottom: 10px;
 }
 
 #submit {
+    margin-top: 25px;
     padding-left: 50px;
 }
 
-
+.form textarea {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
 
 
 
