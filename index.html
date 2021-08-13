@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link
+    rel="stylesheet"
+    href="/styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet"> 
+<!-- css links go here -->
+</head>
+
+<body>
+    <header class="page-heading">
+        <h1>Nathaniel Ko</h1>
+    </header>
+<div class="portrait">
+    <img src="photo_of_me.png" alt="Photo of Nathaniel Ko" class="photo">
+</div>
+<!-- top section - image of myself along w/ a title I hope to get in the future
+                 - Two buttons: - Contact Me: point to the contact me form
+                                - Resume: download button for my resume -->
+<!-- division (stylish line or different background color - see discord.com) -->
+
+<!-- infographic section - tells information about me -->
+
+<!-- division -->
+
+<div class="education">
+    <div class="certification">
+    <br>
+    <h3>2012 - 2018</h3>
+    <h2>Bachelor's Degree</h2>
+    </div>
+
+    <div class="edinfo">
+    <h3>Bachelor's Degree</h3>
+    <h4>UNIVERSITY OF WATERLOO</h4>
+    <p>Honour's Co-op Bachelor in Physics and Astronomy<br>
+       Minor in Earth Science
+    </p>
+    </div>
+    <div id="seneca" class="certification">
+        <br>
+        <h3>2021 - 2024 (expected)</h3>
+        <h2>Diploma</h2>
+    </div>
+    
+    <div class="edinfo">
+    <h3>Diploma</h3>
+    <h4>SENECA COLLEGE</h4>
+    <p>Computer Programming and Analysis<br>
+    </p>
+    </div>
+    
+</div>
+    
+
+<!-- education section - use an interesting style to convey my educational info -->
+
+<!-- division -->
+<div class="form">
+    <h2>Contact Me</h2>
+        
+    
+    <form action="https://httpbin.org/post" method="POST" id="contactme">
+        <label for="name">Name</label> <br>
+        <input name="name" type="text" placeholder="John Doe"> <br>
+        <label for="email">Email</label> <br>
+        <input name="email" type="email" placeholder="youremail@website.com"> <br>
+        <label for="address">Address</label> <br>
+        <input name="address" type="text" placeholder="221 Address Rd."> <br>
+        <label for="postalcode">Postal Code</label> <br>
+        <input name="postalcode" type="text" placeholder="A1A 1A1"> <br>
+        
+        <input name="topic" id="question" type="radio">
+        <label for="question">Question?</label><br>
+        <input name="topic" id="comment" type="radio">
+        <label for="comment">Comment?</label><br>
+        <input name="topic" id="hiring" type="radio">
+        <label for="Hiring?">Hiring?</label><br>
+        <input type="submit" value="Submit">
+        
+    </form>
+</div>
+<!-- HTML form - where the user can fill out their information along with a message (a contact me form). Should include the following :
+- Name
+- Email Address
+- Address
+- City (use a <datalist> for autocomplete of common Canadian cities)
+- Postal Code (must be a valid Canadian Postal Code, with or without a space, use a regex pattern)
+- Radio Options to specify what this is about: one of "Question", 
+  "Comment", or "Hiring". If the user selects "Hiring", dynamically 
+  reveal (with JavaScript) another input box to enter the hourly rate 
+  (with proper validation). In the case of "Comment" or "Question" 
+  hide this input box.
+- A large area to enter the message that they want to send
+ -->
+<footer>
+
+</footer>
+<!-- external js goes here -->
+</body>
+</html>

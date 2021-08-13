@@ -1,0 +1,162 @@
+/* 
+- should cover 90% of the viewport width
+- max width of 1100 pixels
+- centred in the viewport 
+*/
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+    align-self: center;
+}
+
+.portrait {
+    background-color: rgb(146, 174, 212);
+    width: 90%;
+    max-width: 1100px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.page-heading {
+    border-radius: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 90%;
+    max-width: 1100px;
+    text-align: center;
+    background: linear-gradient(90deg, white 0%, rgb(166, 223, 223) 100%);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-heading h1 {
+    padding-left: 30px;
+    text-align: left;
+    width: 90%;
+    max-width: 1100px;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.education {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    
+    width: 90%;
+    max-width: 1100px;
+    background-color: #cfcfcf;    
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.certification {
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(81, 168, 81);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    float: left;
+    width: 250px;
+    height: 120px;
+}
+
+#seneca {
+    order: 3;
+}
+
+.edinfo {
+    padding-left: 20px;
+    width: 400px;
+    height: 150px;
+}
+
+.education h3 {
+    
+    padding-top: 10px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.education h2 {
+    align-self: flex-end;
+    color: #f6f6f6;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.form {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1100px;
+    background-color: #f6f6f6;    
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+}
+
+.form h2 {
+    color: #a19f9f;
+    padding-left: 30px;
+}
+
+.form label {
+    color: rgb(142, 190, 190);
+    padding-left: 35px;
+}
+
+.form input {
+    color: rgb(78, 78, 78);
+    margin-left: 30px;
+}
+
+.form h2 {
+    padding-top: 10px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#submit {
+    padding-left: 50px;
+}
+
+
+
+
+
