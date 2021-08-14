@@ -119,10 +119,10 @@
         <label for="question">Question?</label><br>
         <input name="topic" id="comment" type="radio">
         <label for="comment">Comment?</label><br>
-        <input name="topic" id="hiring" type="radio" onclick="javascript:salaryInput();">
+        <input name="topic" id="hiring" type="radio" onchange="javascript:salaryInput();">
         <label for="hiring">Hiring?</label><br>
-        <input type="number" id="salary" style="visibility: hidden;" placeholder="$50000">
-        <label for="salary" id="salarylabel" style="visibility: hidden;">Salary</label> <br>
+        <input type="number" id="salary" style="visibility: hidden;" placeholder="$50000" required>
+        <label for="salary" id="salarylabel" style="visibility: hidden;" >Salary</label> <br>
         <script>
             function salaryInput() {
                 if (document.getElementById('hiring').checked) {
